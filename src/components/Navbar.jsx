@@ -15,9 +15,9 @@ export default function Navbar() {
         <a href="#home" className="text-2xl font-extrabold tracking-tight text-slate-900">PixelCraft</a>
 
         <div className="hidden items-center gap-8 md:flex">
-            {navLinks.map((link) => {
+            {navLinks.map((link) => (
                 <a key={link.name} href={link.href} className="text-sm font-medium text-slate-600 transition hover:text-violet-600">{link.name}</a>
-            })}
+            ))}
 
             <a href="#contact" className="hidden rounded-full bg-violet-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-violet-700 md:inline-flex">
                 Let's talk
